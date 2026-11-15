@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support us | Get Debating</title>
+<meta name="description" content="Fund a debating course for a school without the budget, or become a corporate partner of Get Debating.">
+
+<!--
+  HOW TO EDIT THIS PAGE
+  - All the words you can change sit between the tags, in plain view.
+    Each section starts with a banner comment like  ===== SECTION NAME =====
+  - Anything in [SQUARE BRACKETS] is a placeholder waiting for real content.
+  - Colours and fonts: css/site.css, section 1 (SETTINGS).
+  - Email, social links, donation link, form address: js/settings.js (fill in once).
+  - Photos: look for comments starting  PHOTO:
+-->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FF5A3C'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='20' text-anchor='middle' fill='%2314213D'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER (same on every page) ===== -->
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="about.html">Who we are</a></li>
+        <li><a href="schools.html">For schools</a></li>
+        <li><a href="support.html" aria-current="page">Support us</a></li>
+        <li><a href="reviews.html">Schools &amp; reviews</a></li>
+        <li><a href="next-steps.html">Next steps</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li class="site-nav__fund"><a class="btn btn--fund btn--small" href="support.html#fund-a-course">Fund a course</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--small header-book" href="schools.html#consultation">Book<span class="header-book__long">&nbsp;a consultation</span></a>
+  </div>
+</header>
+
+
+<main id="main">
+  <!-- ===== PAGE HEADING ===== -->
+  <section class="page-hero on-coral">
+    <div class="wrap">
+      <p class="kicker">Support us</p>
+      <!-- EDIT: page headline and intro -->
+      <h1>Put debating in a school that <span class="hl">can't pay for it.</span></h1>
+      <p class="lead">Get Debating is a non-profit. Donations and corporate sponsorship pay for courses in schools without the budget.</p>
+      <div class="actions">
+        <a class="btn btn--ink" href="#fund-a-course">Fund a course</a>
+        <a class="btn btn--plain" href="#partners">Become a partner</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== (A) FUND A COURSE ===== -->
+  <section class="section on-white" id="fund-a-course">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Fund a course</p>
+        <!-- EDIT: fundraising explanation -->
+        <h2>Your donation pays for a course</h2>
+        <p class="lead">Some schools have no budget for debating. Donations pay for courses in those schools, so their students get the same coaching as everyone else.</p>
+      </div>
+
+      <!-- GIVING LEVELS (optional extra: delete this <div class="levels"> block if you don't want it).
+           EDIT: replace [€X], [€Y] and [€Z] with real amounts. -->
+      <div class="levels">
+        <div class="card">
+          <p class="level__amount"><span class="ph">[€X]</span></p>
+          <p class="level__funds">funds one student</p>
+        </div>
+        <div class="card">
+          <p class="level__amount"><span class="ph">[€Y]</span></p>
+          <p class="level__funds">funds one class</p>
+        </div>
+        <div class="card card--featured">
+          <p class="level__amount"><span class="ph">[€Z]</span></p>
+          <p class="level__funds">funds a full course</p>
+        </div>
+      </div>
+
+      <div class="stack" style="margin-top:2.25rem; align-items:flex-start">
+        <!-- The Donate button uses the donation link in js/settings.js -->
+        <a class="btn btn--big" data-link="donationLink" href="#">Donate</a>
+        <p class="field__hint">Donations are taken on <span class="ph">[DONATION PLATFORM]</span>. The button opens it in your browser.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== NOMINATE A SCHOOL (optional extra: delete this whole section if you don't want it) ===== -->
+  <section class="section" id="nominate">
+    <div class="wrap split">
+
+      <div class="stack">
+        <p class="kicker">Funded places</p>
+        <!-- EDIT: text beside the form -->
+        <h2>Nominate a school</h2>
+        <p class="lead">Know a school that would love a debating course but could not pay for one? Tell us about it.</p>
+        <p><span class="ph">[ADD: how funded places are decided and when.]</span></p>
+      </div>
+
+      <form class="form-card" data-form="Nominate a school" data-success="Thank you. We have your nomination.">
+        <div class="form-grid">
+          <div class="field">
+            <label for="n-name">Your name</label>
+            <input class="input" id="n-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="n-email">Your email</label>
+            <input class="input" id="n-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="n-school">School you are nominating</label>
+            <input class="input" id="n-school" name="school" type="text" required>
+          </div>
+          <div class="field">
+            <label for="n-link">Your link to the school</label>
+            <select class="input" id="n-link" name="link_to_school" required>
+              <option value="">Choose one</option>
+              <option>Teacher there</option>
+              <option>Parent</option>
+              <option>Student</option>
+              <option>Past pupil</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="n-why">Why this school?</label>
+          <textarea class="input" id="n-why" name="why" required></textarea>
+        </div>
+        <p class="field__hint">We use these details only to follow up on your nomination. See our <a href="privacy.html">privacy notice</a>.</p>
+        <div class="actions">
+          <button class="btn" type="submit">Send nomination</button>
+        </div>
+        <p class="form-status" role="status"></p>
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ===== (B) CORPORATE PARTNERS ===== -->
+  <section class="section on-ink" id="partners">
+    <div class="wrap split">
+      <div class="stack">
+        <p class="kicker">Corporate partners</p>
+        <!-- EDIT: what sponsorship funds -->
+        <h2>Sponsor a course. Back a school.</h2>
+      </div>
+      <div class="stack">
+        <p class="lead">Sponsorship from companies pays for full courses in schools without the budget. Partners are named on our logo wall and beside the schools they fund.</p>
+        <p><span class="ph">[ADD: anything else a partner receives.]</span></p>
+        <div class="actions">
+          <a class="btn" href="#partner-enquiry">Become a partner</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== LOGO WALL ===== -->
+  <section class="section on-white" id="logo-wall">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Our partners</p>
+        <h2>Companies that have funded courses</h2>
+      </div>
+
+      <!-- LOGOS: to add a real logo, replace everything inside one <li class="logo-slot"> with
+           <img src="images/sponsors/name.svg" alt="Company name">
+           Only list companies that have actually funded a course. Delete unused slots. -->
+      <ul class="logo-strip logo-wall">
+
+        <li class="logo-slot"><span>[SPONSOR LOGO]</span><small>320 × 160</small></li>
+
+        <li class="logo-slot"><span>[SPONSOR LOGO]</span><small>320 × 160</small></li>
+
+        <li class="logo-slot"><span>[SPONSOR LOGO]</span><small>320 × 160</small></li>
+
+        <li class="logo-slot"><span>[SPONSOR LOGO]</span><small>320 × 160</small></li>
+
+        <li class="logo-slot"><span>[SPONSOR LOGO]</span><small>320 × 160</small></li>
+
+        <li class="logo-slot"><span>[SPONSOR LOGO]</span><small>320 × 160</small></li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ===== PARTNER ENQUIRY FORM ===== -->
+  <section class="section" id="partner-enquiry">
+    <div class="wrap split">
+
+      <div class="stack">
+        <p class="kicker">Partner enquiry</p>
+        <h2>Talk to us about sponsoring</h2>
+        <p class="lead">Leave your details and we will get back to you.</p>
+      </div>
+
+      <form class="form-card" data-form="Partner enquiry" data-success="Thank you. We have your enquiry and will be in touch.">
+        <div class="form-grid">
+          <div class="field">
+            <label for="p-name">Your name</label>
+            <input class="input" id="p-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="p-company">Company</label>
+            <input class="input" id="p-company" name="company" type="text" autocomplete="organization" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="p-email">Email</label>
+          <input class="input" id="p-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="p-message">What do you have in mind? (optional)</label>
+          <textarea class="input" id="p-message" name="message"></textarea>
+        </div>
+        <p class="field__hint">We use these details only to reply to your enquiry. See our <a href="privacy.html">privacy notice</a>.</p>
+        <div class="actions">
+          <button class="btn" type="submit">Send enquiry</button>
+        </div>
+        <p class="form-status" role="status"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ===== CLOSING ACTION PANEL (same on every page) ===== -->
+  <section class="section no-print">
+    <div class="wrap">
+      <div class="action-panel">
+        <div class="stack" style="gap:.9rem">
+          <h2>Ready to get your students debating?</h2>
+          <p class="lead">Book a consultation. We will talk through your students and recommend the programme that fits.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="schools.html#consultation">Book a consultation</a>
+          <a class="btn btn--plain" href="support.html#fund-a-course">Fund a course</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ===== FOOTER (same on every page) ===== -->
+<footer class="site-footer on-ink">
+  <div class="wrap">
+    <div class="site-footer__grid">
+
+      <div class="site-footer__brand">
+        <a class="wordmark wordmark--large" href="index.html">
+          <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+        </a>
+        <p class="site-footer__nonprofit">Get Debating is a non-profit organisation.</p>
+        <!-- REGISTRATION NUMBER: when you have one, un-comment the next line and fill it in.
+        <p>Registration number: [REGISTRATION NUMBER]</p>
+        -->
+      </div>
+
+      <nav aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="about.html">Who we are</a></li>
+          <li><a href="schools.html">For schools</a></li>
+          <li><a href="support.html">Support us</a></li>
+          <li><a href="reviews.html">Schools &amp; reviews</a></li>
+          <li><a href="next-steps.html">Next steps</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Contact</h2>
+        <!-- The email and social links are set once in js/settings.js. Delete any line you don't use. -->
+        <ul>
+          <li><a data-link="email" href="#">[EMAIL]</a></li>
+          <li><a data-link="instagram" href="#">Instagram</a></li>
+          <li><a data-link="linkedin" href="#">LinkedIn</a></li>
+          <li><a data-link="tiktok" href="#">TikTok</a></li>
+        </ul>
+      </div>
+
+      <!-- NEWSLETTER (optional extra: delete this whole <form> if you don't want it) -->
+      <form class="newsletter" data-form="Newsletter sign-up" data-success="Thank you. You are on the list.">
+        <h2>Newsletter</h2>
+        <div class="field">
+          <label for="newsletter-email">Email address</label>
+          <div class="newsletter__row">
+            <input class="input" id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@school.ie" required>
+            <button class="btn btn--small" type="submit">Sign up</button>
+          </div>
+        </div>
+        <p class="form-status" role="status"></p>
+      </form>
+
+    </div>
+
+    <div class="site-footer__base">
+      <p>© <span data-year>2026</span> Get Debating</p>
+      <p><a href="privacy.html">Privacy notice</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/settings.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

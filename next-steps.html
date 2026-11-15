@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next steps | Get Debating</title>
+<meta name="description" content="For schools that have finished a programme: a random motion generator, competitions to enter and debate drills teachers can run.">
+
+<!--
+  HOW TO EDIT THIS PAGE
+  - All the words you can change sit between the tags, in plain view.
+    Each section starts with a banner comment like  ===== SECTION NAME =====
+  - Anything in [SQUARE BRACKETS] is a placeholder waiting for real content.
+  - Colours and fonts: css/site.css, section 1 (SETTINGS).
+  - Email, social links, donation link, form address: js/settings.js (fill in once).
+  - Photos: look for comments starting  PHOTO:
+-->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FF5A3C'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='20' text-anchor='middle' fill='%2314213D'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER (same on every page) ===== -->
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="about.html">Who we are</a></li>
+        <li><a href="schools.html">For schools</a></li>
+        <li><a href="support.html">Support us</a></li>
+        <li><a href="reviews.html">Schools &amp; reviews</a></li>
+        <li><a href="next-steps.html" aria-current="page">Next steps</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li class="site-nav__fund"><a class="btn btn--fund btn--small" href="support.html#fund-a-course">Fund a course</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--small header-book" href="schools.html#consultation">Book<span class="header-book__long">&nbsp;a consultation</span></a>
+  </div>
+</header>
+
+
+<main id="main">
+  <!-- ===== PAGE HEADING ===== -->
+  <section class="page-hero on-yellow no-print">
+    <div class="wrap">
+      <p class="kicker">Next steps</p>
+      <!-- EDIT: page headline and intro -->
+      <h1>Finished a programme? <span class="hl">Keep going.</span></h1>
+      <p class="lead">Motions to practise with, competitions to enter and drills you can run yourself.</p>
+      <p class="jump">
+        <a href="#motions">Motion generator</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#drills">Drills</a>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ===== RANDOM MOTION GENERATOR =====
+       The motions are a plain list in js/motions.js (one per line). Edit them there. -->
+  <section class="section on-white no-print" id="motions">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Random motion generator</p>
+        <h2>Need something to debate?</h2>
+      </div>
+
+      <div class="generator" id="motion-generator">
+
+        <div class="generator__main">
+          <div class="filters">
+            <div class="field">
+              <label for="motion-topic">Topic</label>
+              <select class="input" id="motion-topic"><option value="">All topics</option></select>
+            </div>
+            <div class="field">
+              <label for="motion-level">Difficulty</label>
+              <select class="input" id="motion-level"><option value="">All levels</option></select>
+            </div>
+          </div>
+
+          <div class="motion-card" aria-live="polite">
+            <p class="motion-card__text" id="motion-text">Press the button for a motion.</p>
+            <p class="motion-card__side" id="motion-side" hidden></p>
+            <ul class="chips">
+              <li id="motion-chip-topic" hidden></li>
+              <li id="motion-chip-level" hidden></li>
+            </ul>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn--big" type="button" id="motion-new">Give me a motion</button>
+            <!-- SIDE PICKER (optional extra: delete this button if you don't want it) -->
+            <button class="btn btn--fund" type="button" id="motion-pick-side">Pick my side</button>
+          </div>
+          <p class="field__hint" id="motion-count"></p>
+        </div>
+
+        <!-- PREP TIMER (optional extra: delete this whole <div> if you don't want it) -->
+        <div class="card tool timer" id="prep-timer">
+          <h3>Prep timer</h3>
+          <p class="timer__display" id="timer-display">15:00</p>
+          <div class="timer__row">
+            <div class="field">
+              <label for="timer-minutes">Minutes</label>
+              <!-- EDIT: prep time options -->
+              <select class="input" id="timer-minutes">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15" selected>15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select>
+            </div>
+            <button class="btn btn--small" type="button" id="timer-start">Start</button>
+            <button class="btn btn--small btn--plain" type="button" id="timer-reset">Reset</button>
+          </div>
+          <p class="form-status" id="timer-status" role="status"></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== COMPETITIONS TO ENTER ===== -->
+  <section class="section no-print" id="competitions">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Competitions to enter</p>
+        <h2>Ready for a real opponent?</h2>
+      </div>
+
+      <!-- EDIT: one card per competition. Copy a card to add one. Put the web address inside href="". -->
+      <div class="card-grid">
+
+        <article class="card">
+          <h3><span class="ph">[COMPETITION]</span></h3>
+          <dl class="facts">
+            <dt>Suits</dt>     <dd><span class="ph">[WHO IT SUITS]</span></dd>
+            <dt>Deadline</dt>  <dd><span class="ph">[DEADLINE]</span></dd>
+          </dl>
+          <a class="card__link" href="#">Competition website <span class="ph">[LINK]</span></a>
+        </article>
+
+        <article class="card">
+          <h3><span class="ph">[COMPETITION]</span></h3>
+          <dl class="facts">
+            <dt>Suits</dt>     <dd><span class="ph">[WHO IT SUITS]</span></dd>
+            <dt>Deadline</dt>  <dd><span class="ph">[DEADLINE]</span></dd>
+          </dl>
+          <a class="card__link" href="#">Competition website <span class="ph">[LINK]</span></a>
+        </article>
+
+        <article class="card">
+          <h3><span class="ph">[COMPETITION]</span></h3>
+          <dl class="facts">
+            <dt>Suits</dt>     <dd><span class="ph">[WHO IT SUITS]</span></dd>
+            <dt>Deadline</dt>  <dd><span class="ph">[DEADLINE]</span></dd>
+          </dl>
+          <a class="card__link" href="#">Competition website <span class="ph">[LINK]</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== DEBATE DRILLS =====
+       EDIT: one <article class="card drill"> per drill. Copy a block to add one.
+       Each "Print this drill" button prints that drill alone on one page. -->
+  <section class="section on-white print-host" id="drills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Debate drills</p>
+        <h2>Drills you can run yourself</h2>
+        <p class="lead">Short exercises for any classroom. No equipment needed.</p>
+      </div>
+
+      <div class="drill-grid">
+
+        <article class="card drill">
+          <h3>One-minute speeches</h3>
+          <ul class="chips"><li>15 minutes</li><li>Whole class, in pairs</li></ul>
+          <p class="drill__aim">Practises: speaking without notes.</p>
+          <ol>
+            <li>Put students in pairs. Give every pair an easy topic, such as "the best day of the week".</li>
+            <li>Partner A speaks for one minute without stopping. Partner B listens and counts every "um" and "like".</li>
+            <li>Swap roles with a new topic.</li>
+            <li>Ask a few pairs what made a speech easy to follow.</li>
+            <li>Go again with a harder topic.</li>
+          </ol>
+          <button class="btn btn--small btn--plain" type="button" data-print-drill>Print this drill</button>
+          <p class="drill__brand">Get Debating</p>
+        </article>
+
+        <article class="card drill">
+          <h3>The why chain</h3>
+          <ul class="chips"><li>10 minutes</li><li>Pairs</li></ul>
+          <p class="drill__aim">Practises: explaining a reason in full.</p>
+          <ol>
+            <li>Give each pair a simple claim, such as "school should start later".</li>
+            <li>Partner A states the claim and gives one reason.</li>
+            <li>Partner B asks "Why?". A answers. B asks again, five times in a row.</li>
+            <li>Swap roles with a new claim.</li>
+            <li>Each pair shares the deepest reason they reached.</li>
+          </ol>
+          <button class="btn btn--small btn--plain" type="button" data-print-drill>Print this drill</button>
+          <p class="drill__brand">Get Debating</p>
+        </article>
+
+        <article class="card drill">
+          <h3>Rebuttal tennis</h3>
+          <ul class="chips"><li>10 minutes</li><li>Pairs</li></ul>
+          <p class="drill__aim">Practises: answering the other side.</p>
+          <ol>
+            <li>Give the class a motion. In each pair, A argues for and B argues against.</li>
+            <li>A makes one short point.</li>
+            <li>B must answer that point before making a new one: "They said… but…".</li>
+            <li>Keep the rally going. Whoever repeats a point or stalls for five seconds loses the rally.</li>
+            <li>Swap sides and play again.</li>
+          </ol>
+          <button class="btn btn--small btn--plain" type="button" data-print-drill>Print this drill</button>
+          <p class="drill__brand">Get Debating</p>
+        </article>
+
+        <article class="card drill">
+          <h3>Where do you stand?</h3>
+          <ul class="chips"><li>15 minutes</li><li>Whole class</li></ul>
+          <p class="drill__aim">Practises: forming an opinion and defending it.</p>
+          <ol>
+            <li>Name one wall "Agree" and the opposite wall "Disagree".</li>
+            <li>Read out a statement. Students stand anywhere along the line between the walls.</li>
+            <li>Ask two or three students in different spots to explain why they are standing there.</li>
+            <li>Invite anyone who has been persuaded to move, and to say what changed their mind.</li>
+            <li>Repeat with a new statement.</li>
+          </ol>
+          <button class="btn btn--small btn--plain" type="button" data-print-drill>Print this drill</button>
+          <p class="drill__brand">Get Debating</p>
+        </article>
+
+        <article class="card drill">
+          <h3>Build a point</h3>
+          <ul class="chips"><li>20 minutes</li><li>Groups of 3 or 4</li></ul>
+          <p class="drill__aim">Practises: structuring an argument.</p>
+          <ol>
+            <li>Write four words on the board: Point, Reason, Example, Link.</li>
+            <li>Give each group a motion and a side.</li>
+            <li>Groups write one argument in four sentences, one for each word. The last sentence links back to the motion.</li>
+            <li>One speaker from each group delivers it.</li>
+            <li>The class says which of the four parts was strongest and which needs work.</li>
+          </ol>
+          <button class="btn btn--small btn--plain" type="button" data-print-drill>Print this drill</button>
+          <p class="drill__brand">Get Debating</p>
+        </article>
+
+        <article class="card drill">
+          <h3>Speed prep</h3>
+          <ul class="chips"><li>25 minutes</li><li>Teams of 3 or 4</li></ul>
+          <p class="drill__aim">Practises: preparing quickly.</p>
+          <ol>
+            <li>Split the class into teams. Half are Proposition, half are Opposition.</li>
+            <li>Reveal a motion and start a five-minute timer.</li>
+            <li>Each team agrees its three best points and who will say each one.</li>
+            <li>Every speaker gets 30 seconds to deliver one point.</li>
+            <li>Finish by asking: what would you have done with five more minutes?</li>
+          </ol>
+          <button class="btn btn--small btn--plain" type="button" data-print-drill>Print this drill</button>
+          <p class="drill__brand">Get Debating</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING ACTION PANEL (same on every page) ===== -->
+  <section class="section no-print">
+    <div class="wrap">
+      <div class="action-panel">
+        <div class="stack" style="gap:.9rem">
+          <h2>Ready to get your students debating?</h2>
+          <p class="lead">Book a consultation. We will talk through your students and recommend the programme that fits.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="schools.html#consultation">Book a consultation</a>
+          <a class="btn btn--plain" href="support.html#fund-a-course">Fund a course</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ===== FOOTER (same on every page) ===== -->
+<footer class="site-footer on-ink">
+  <div class="wrap">
+    <div class="site-footer__grid">
+
+      <div class="site-footer__brand">
+        <a class="wordmark wordmark--large" href="index.html">
+          <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+        </a>
+        <p class="site-footer__nonprofit">Get Debating is a non-profit organisation.</p>
+        <!-- REGISTRATION NUMBER: when you have one, un-comment the next line and fill it in.
+        <p>Registration number: [REGISTRATION NUMBER]</p>
+        -->
+      </div>
+
+      <nav aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="about.html">Who we are</a></li>
+          <li><a href="schools.html">For schools</a></li>
+          <li><a href="support.html">Support us</a></li>
+          <li><a href="reviews.html">Schools &amp; reviews</a></li>
+          <li><a href="next-steps.html">Next steps</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Contact</h2>
+        <!-- The email and social links are set once in js/settings.js. Delete any line you don't use. -->
+        <ul>
+          <li><a data-link="email" href="#">[EMAIL]</a></li>
+          <li><a data-link="instagram" href="#">Instagram</a></li>
+          <li><a data-link="linkedin" href="#">LinkedIn</a></li>
+          <li><a data-link="tiktok" href="#">TikTok</a></li>
+        </ul>
+      </div>
+
+      <!-- NEWSLETTER (optional extra: delete this whole <form> if you don't want it) -->
+      <form class="newsletter" data-form="Newsletter sign-up" data-success="Thank you. You are on the list.">
+        <h2>Newsletter</h2>
+        <div class="field">
+          <label for="newsletter-email">Email address</label>
+          <div class="newsletter__row">
+            <input class="input" id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@school.ie" required>
+            <button class="btn btn--small" type="submit">Sign up</button>
+          </div>
+        </div>
+        <p class="form-status" role="status"></p>
+      </form>
+
+    </div>
+
+    <div class="site-footer__base">
+      <p>© <span data-year>2026</span> Get Debating</p>
+      <p><a href="privacy.html">Privacy notice</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/settings.js"></script>
+<script src="js/site.js"></script>
+<script src="js/motions.js"></script>
+<script src="js/motion-generator.js"></script>
+</body>
+</html>
