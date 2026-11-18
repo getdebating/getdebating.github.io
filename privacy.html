@@ -12,11 +12,13 @@
     Each section starts with a banner comment like  ===== SECTION NAME =====
   - Anything in [SQUARE BRACKETS] is a placeholder waiting for real content.
   - Colours and fonts: css/site.css, section 1 (SETTINGS).
-  - Email, social links, donation link, form address: js/settings.js (fill in once).
+  - Email, social links, form address: js/settings.js (fill in once).
+  - Logo and browser-tab icon: the files in images/logo/.
   - Photos: look for comments starting  PHOTO:
 -->
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FF5A3C'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='20' text-anchor='middle' fill='%2314213D'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="images/logo/get-debating-profile-picture-yellow.png">
+<link rel="apple-touch-icon" href="images/logo/get-debating-profile-picture-yellow.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
@@ -32,7 +34,7 @@
 <header class="site-header">
   <div class="wrap site-header__bar">
     <a class="wordmark" href="index.html">
-      <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+      <img src="images/logo/get-debating-logo.svg" alt="Get Debating" width="88" height="64">
     </a>
 
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -41,11 +43,10 @@
       <ul>
         <li><a href="about.html">Who we are</a></li>
         <li><a href="schools.html">For schools</a></li>
-        <li><a href="support.html">Support us</a></li>
+        <li><a href="sponsor.html">Sponsor us</a></li>
         <li><a href="reviews.html">Schools &amp; reviews</a></li>
         <li><a href="next-steps.html">Next steps</a></li>
         <li><a href="blog/index.html">Blog</a></li>
-        <li class="site-nav__fund"><a class="btn btn--fund btn--small" href="support.html#fund-a-course">Fund a course</a></li>
       </ul>
     </nav>
 
@@ -79,9 +80,8 @@
         <h2>What we collect</h2>
         <p>We only collect what you type into the forms on this site:</p>
         <ul>
-          <li>Consultation request: school, contact name, email, year group, number of students, debating experience and the programme you are interested in.</li>
-          <li>Nominate a school: your name, email, the school, your link to it and your reasons.</li>
-          <li>Partner enquiry: your name, company, email and message.</li>
+          <li>Consultation request: school, contact name, email, year group, number of students, debating experience, the programme you are interested in and anything you add in the additional comments box.</li>
+          <li>Sponsor enquiry: your name, company or business, email and message.</li>
           <li>Newsletter: your email address.</li>
         </ul>
 
@@ -89,7 +89,7 @@
         <p>To reply to your request, and to send you the newsletter if you signed up for it. We do not sell your details.</p>
 
         <h2>Who else handles it</h2>
-        <p><span class="ph">[LIST THE SERVICES YOU USE: form service, newsletter service, donation platform.]</span></p>
+        <p><span class="ph">[LIST THE SERVICES YOU USE: form service, newsletter service.]</span></p>
         <p><span class="ph">[KEEP OR DELETE: This site loads its fonts from Google Fonts, so Google receives your IP address when a page loads.]</span></p>
 
         <h2>How long we keep it</h2>
@@ -116,7 +116,6 @@
         </div>
         <div class="actions">
           <a class="btn" href="schools.html#consultation">Book a consultation</a>
-          <a class="btn btn--plain" href="support.html#fund-a-course">Fund a course</a>
         </div>
       </div>
     </div>
@@ -132,7 +131,7 @@
 
       <div class="site-footer__brand">
         <a class="wordmark wordmark--large" href="index.html">
-          <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+          <img src="images/logo/get-debating-logo-on-navy.svg" alt="Get Debating" width="176" height="128">
         </a>
         <p class="site-footer__nonprofit">Get Debating is a non-profit organisation.</p>
         <!-- REGISTRATION NUMBER: when you have one, un-comment the next line and fill it in.
@@ -145,7 +144,7 @@
         <ul>
           <li><a href="about.html">Who we are</a></li>
           <li><a href="schools.html">For schools</a></li>
-          <li><a href="support.html">Support us</a></li>
+          <li><a href="sponsor.html">Sponsor us</a></li>
           <li><a href="reviews.html">Schools &amp; reviews</a></li>
           <li><a href="next-steps.html">Next steps</a></li>
           <li><a href="blog/index.html">Blog</a></li>

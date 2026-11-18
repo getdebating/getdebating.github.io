@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>For schools | Get Debating</title>
-<meta name="description" content="Debating programmes for secondary schools: one-day bootcamp, six-week workshop series, advanced course and long-term coaching. Book a consultation.">
+<meta name="description" content="Debating programmes for secondary schools, run in your school by our debating teachers: one-day bootcamp, six-week workshop series and after school club. Book a consultation.">
 
 <!--
   HOW TO EDIT THIS PAGE
@@ -12,11 +12,13 @@
     Each section starts with a banner comment like  ===== SECTION NAME =====
   - Anything in [SQUARE BRACKETS] is a placeholder waiting for real content.
   - Colours and fonts: css/site.css, section 1 (SETTINGS).
-  - Email, social links, donation link, form address: js/settings.js (fill in once).
+  - Email, social links, form address: js/settings.js (fill in once).
+  - Logo and browser-tab icon: the files in images/logo/.
   - Photos: look for comments starting  PHOTO:
 -->
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FF5A3C'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='20' text-anchor='middle' fill='%2314213D'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="images/logo/get-debating-profile-picture-yellow.png">
+<link rel="apple-touch-icon" href="images/logo/get-debating-profile-picture-yellow.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
@@ -32,7 +34,7 @@
 <header class="site-header">
   <div class="wrap site-header__bar">
     <a class="wordmark" href="index.html">
-      <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+      <img src="images/logo/get-debating-logo.svg" alt="Get Debating" width="88" height="64">
     </a>
 
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -41,11 +43,10 @@
       <ul>
         <li><a href="about.html">Who we are</a></li>
         <li><a href="schools.html" aria-current="page">For schools</a></li>
-        <li><a href="support.html">Support us</a></li>
+        <li><a href="sponsor.html">Sponsor us</a></li>
         <li><a href="reviews.html">Schools &amp; reviews</a></li>
         <li><a href="next-steps.html">Next steps</a></li>
         <li><a href="blog/index.html">Blog</a></li>
-        <li class="site-nav__fund"><a class="btn btn--fund btn--small" href="support.html#fund-a-course">Fund a course</a></li>
       </ul>
     </nav>
 
@@ -61,7 +62,7 @@
       <p class="kicker">For schools</p>
       <!-- EDIT: page headline and intro -->
       <h1>Pick a programme. Or let us <span class="hl">advise.</span></h1>
-      <p class="lead">Four programmes, each taught in your school by experienced university debaters. Book a consultation and we will recommend the one that fits.</p>
+      <p class="lead">Three programmes, each run in your school by our debating teachers. Book a consultation and we will recommend the one that fits.</p>
       <div class="actions">
         <a class="btn" href="#consultation">Book a consultation</a>
         <a class="btn btn--plain" href="#faq">Teacher questions</a>
@@ -75,7 +76,7 @@
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Programmes</p>
-        <h2>Four ways to get your students debating</h2>
+        <h2>Three ways to get your students debating</h2>
       </div>
 
       <div class="programme-grid">
@@ -109,32 +110,15 @@
         </article>
 
         <!-- EDIT: programme 3 -->
-        <article class="card programme" id="advanced-course">
-          <h3>Advanced course</h3>
-          <p>Four classes for students who already debate.</p>
+        <article class="card programme" id="after-school-club">
+          <h3>After school club</h3>
+          <p>A debating club that runs after school, led by our debating teachers.</p>
           <dl class="facts">
-            <dt>Length</dt>  <dd>4 classes</dd>
-            <dt>For</dt>     <dd>Experienced debaters</dd>
+            <dt>How often</dt>   <dd><span class="ph">[HOW OFTEN]</span></dd>
+            <dt>How long</dt>    <dd><span class="ph">[HOW LONG]</span></dd>
+            <dt>Group size</dt>  <dd><span class="ph">[GROUP SIZE]</span></dd>
           </dl>
-          <ul class="ticks">
-            <li>Idea generation</li>
-            <li>Structuring a point</li>
-            <li>Preparing quickly</li>
-            <li>Practice</li>
-          </ul>
-          <a class="card__link" href="#consultation" data-programme="Advanced course">Ask about the advanced course</a>
-        </article>
-
-        <!-- EDIT: programme 4 -->
-        <article class="card programme" id="long-term-coaching">
-          <h3>Long-term coaching</h3>
-          <p>A coach who stays with your students and builds debating in your school over time.</p>
-          <dl class="facts">
-            <dt>How often</dt>  <dd><span class="ph">[HOW OFTEN]</span></dd>
-            <dt>How long</dt>   <dd><span class="ph">[HOW LONG]</span></dd>
-            <dt>Suits</dt>      <dd><span class="ph">[WHO IT SUITS]</span></dd>
-          </dl>
-          <a class="card__link" href="#consultation" data-programme="Long-term coaching">Ask about long-term coaching</a>
+          <a class="card__link" href="#consultation" data-programme="After school club">Ask about the after school club</a>
         </article>
 
       </div>
@@ -157,14 +141,14 @@
           <summary>What does it cost?</summary>
           <div class="faq__answer">
             <p><span class="ph">[COST ANSWER: your prices, or how you quote after a consultation.]</span></p>
-            <p>If budget is what is stopping you, tell us. Donations pay for courses in schools that could not otherwise run one. You can also <a href="support.html#nominate">nominate a school for a funded place</a>.</p>
+            <p>If budget is what is stopping you, tell us. Business sponsorship pays for courses in some schools.</p>
           </div>
         </details>
 
         <details>
           <summary>How much time does it take?</summary>
           <div class="faq__answer">
-            <p>The bootcamp takes one day. The workshop series is six weekly classes of 90 minutes. The advanced course is four classes.</p>
+            <p>The bootcamp takes one day. The workshop series is six weekly classes of 90 minutes. The after school club runs <span class="ph">[HOW OFTEN]</span> for <span class="ph">[HOW LONG]</span>.</p>
             <p><span class="ph">[ADD: what the teacher needs to do, such as booking a room.]</span></p>
           </div>
         </details>
@@ -244,6 +228,7 @@
               <option>A little, in class</option>
               <option>Some students have debated in competitions</option>
               <option>An experienced team or society</option>
+              <option>Mixed ability</option>
             </select>
           </div>
         </div>
@@ -254,10 +239,15 @@
             <label class="choice choice--wide"><input type="radio" name="programme" value="Not sure, advise me" checked> Not sure, advise me</label>
             <label class="choice"><input type="radio" name="programme" value="One-day bootcamp"> One-day bootcamp</label>
             <label class="choice"><input type="radio" name="programme" value="Workshop series"> Workshop series</label>
-            <label class="choice"><input type="radio" name="programme" value="Advanced course"> Advanced course</label>
-            <label class="choice"><input type="radio" name="programme" value="Long-term coaching"> Long-term coaching</label>
+            <label class="choice"><input type="radio" name="programme" value="After school club"> After school club</label>
+            <label class="choice"><input type="radio" name="programme" value="Ongoing coaching (after a course)"> Ongoing coaching (after a course)</label>
           </div>
         </fieldset>
+
+        <div class="field">
+          <label for="c-comments">Additional comments (optional)</label>
+          <textarea class="input" id="c-comments" name="additional_comments"></textarea>
+        </div>
 
         <p class="field__hint">We use these details only to reply to your request. See our <a href="privacy.html">privacy notice</a>.</p>
         <div class="actions">
@@ -279,7 +269,6 @@
         </div>
         <div class="actions">
           <a class="btn" href="schools.html#consultation">Book a consultation</a>
-          <a class="btn btn--plain" href="support.html#fund-a-course">Fund a course</a>
         </div>
       </div>
     </div>
@@ -295,7 +284,7 @@
 
       <div class="site-footer__brand">
         <a class="wordmark wordmark--large" href="index.html">
-          <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+          <img src="images/logo/get-debating-logo-on-navy.svg" alt="Get Debating" width="176" height="128">
         </a>
         <p class="site-footer__nonprofit">Get Debating is a non-profit organisation.</p>
         <!-- REGISTRATION NUMBER: when you have one, un-comment the next line and fill it in.
@@ -308,7 +297,7 @@
         <ul>
           <li><a href="about.html">Who we are</a></li>
           <li><a href="schools.html">For schools</a></li>
-          <li><a href="support.html">Support us</a></li>
+          <li><a href="sponsor.html">Sponsor us</a></li>
           <li><a href="reviews.html">Schools &amp; reviews</a></li>
           <li><a href="next-steps.html">Next steps</a></li>
           <li><a href="blog/index.html">Blog</a></li>

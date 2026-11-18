@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Get Debating</title>
-<meta name="description" content="Get Debating is a non-profit that teaches secondary school students to debate. Based in Dublin. Coached by experienced university debaters.">
+<meta name="description" content="Get Debating is a non-profit that teaches secondary school students to debate. Based in Dublin. Our debating teachers come to your school.">
 
 <!--
   HOW TO EDIT THIS PAGE
@@ -12,11 +12,13 @@
     Each section starts with a banner comment like  ===== SECTION NAME =====
   - Anything in [SQUARE BRACKETS] is a placeholder waiting for real content.
   - Colours and fonts: css/site.css, section 1 (SETTINGS).
-  - Email, social links, donation link, form address: js/settings.js (fill in once).
+  - Email, social links, form address: js/settings.js (fill in once).
+  - Logo and browser-tab icon: the files in images/logo/.
   - Photos: look for comments starting  PHOTO:
 -->
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FF5A3C'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='20' text-anchor='middle' fill='%2314213D'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="images/logo/get-debating-profile-picture-yellow.png">
+<link rel="apple-touch-icon" href="images/logo/get-debating-profile-picture-yellow.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
@@ -32,7 +34,7 @@
 <header class="site-header">
   <div class="wrap site-header__bar">
     <a class="wordmark" href="index.html">
-      <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+      <img src="images/logo/get-debating-logo.svg" alt="Get Debating" width="88" height="64">
     </a>
 
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -41,11 +43,10 @@
       <ul>
         <li><a href="about.html">Who we are</a></li>
         <li><a href="schools.html">For schools</a></li>
-        <li><a href="support.html">Support us</a></li>
+        <li><a href="sponsor.html">Sponsor us</a></li>
         <li><a href="reviews.html">Schools &amp; reviews</a></li>
         <li><a href="next-steps.html">Next steps</a></li>
         <li><a href="blog/index.html">Blog</a></li>
-        <li class="site-nav__fund"><a class="btn btn--fund btn--small" href="support.html#fund-a-course">Fund a course</a></li>
       </ul>
     </nav>
 
@@ -62,25 +63,17 @@
       <!-- EDIT: the one-sentence pitch. The yellow block goes around whatever is inside class="hl". -->
       <h1>
         <span class="motion-tag">This house believes</span>
-        every student should learn <span class="hl">to debate.</span>
+        every student in your school should learn <span class="hl">to debate.</span>
       </h1>
 
       <div class="hero__grid">
         <div class="stack">
           <!-- EDIT: intro paragraph -->
-          <p class="lead">Get Debating sends experienced university debaters into secondary schools to teach students how to build an argument, think on their feet and speak with confidence.</p>
+          <p class="lead">Get Debating sends our debating teachers to your school to teach students how to build an argument, think on their feet and speak with confidence.</p>
 
           <div class="actions">
             <a class="btn" href="schools.html#consultation">Book a consultation</a>
-            <a class="btn btn--fund" href="support.html#fund-a-course">Fund a course</a>
           </div>
-
-          <!-- EDIT: three short facts -->
-          <ul class="hero__facts">
-            <li>Based in Dublin</li>
-            <li>Non-profit</li>
-            <li>Coached by university debaters</li>
-          </ul>
         </div>
 
         <!-- PHOTO: hero. To use a real photo, delete the <div class="photo-slot">…</div> block
@@ -138,7 +131,7 @@
         </li>
         <li>
           <h3>Our coaches come to you</h3>
-          <p>Experienced university debaters teach the classes in your school.</p>
+          <p>Our debating teachers run the classes in your school.</p>
         </li>
       </ol>
     </div>
@@ -151,12 +144,12 @@
       <div class="section-head section-head--row">
         <div class="stack" style="gap:.75rem">
           <p class="kicker">Programmes</p>
-          <h2>Four ways to get your students debating</h2>
+          <h2>Three ways to get your students debating</h2>
         </div>
         <a class="text-link" href="schools.html">See all programmes in full</a>
       </div>
 
-      <div class="card-grid">
+      <div class="card-grid card-grid--three">
 
         <!-- EDIT: programme card 1 -->
         <article class="card">
@@ -185,24 +178,14 @@
 
         <!-- EDIT: programme card 3 -->
         <article class="card">
-          <h3>Advanced course</h3>
-          <p>For experienced debaters. Generating ideas, structuring a point, preparing quickly, then practice.</p>
-          <ul class="chips">
-            <li>4 classes</li>
-            <li>Experienced debaters</li>
-          </ul>
-          <a class="card__link" href="schools.html#advanced-course">About the advanced course</a>
-        </article>
-
-        <!-- EDIT: programme card 4 -->
-        <article class="card">
-          <h3>Long-term coaching</h3>
-          <p>A coach who stays with your students and builds debating in your school over time.</p>
+          <h3>After school club</h3>
+          <p>A debating club that runs after school, led by our debating teachers.</p>
           <ul class="chips">
             <li class="ph">[HOW OFTEN]</li>
             <li class="ph">[HOW LONG]</li>
+            <li class="ph">[GROUP SIZE]</li>
           </ul>
-          <a class="card__link" href="schools.html#long-term-coaching">About long-term coaching</a>
+          <a class="card__link" href="schools.html#after-school-club">About the after school club</a>
         </article>
 
       </div>
@@ -244,7 +227,7 @@
   <!-- ===== SPONSOR LOGO STRIP ===== -->
   <section class="section section--tight" id="supporters">
     <div class="wrap stack" style="gap:1.5rem">
-      <p class="kicker">Our supporters</p>
+      <p class="kicker">Our sponsors</p>
 
       <!-- LOGOS: to add a real logo, replace everything inside one <li class="logo-slot"> with
            <img src="images/sponsors/name.svg" alt="Company name">
@@ -260,21 +243,6 @@
   </section>
 
 
-  <!-- ===== FUND A COURSE BAND ===== -->
-  <section class="section on-coral fund" id="fund">
-    <div class="wrap fund__grid">
-      <div class="stack">
-        <!-- EDIT: fundraising headline and paragraph -->
-        <h2>Not every school has the budget. You can fund a course.</h2>
-        <p class="lead">Get Debating is a non-profit. Donations and corporate sponsorship pay for courses in schools that could not otherwise run one.</p>
-      </div>
-      <div class="actions">
-        <a class="btn btn--ink" href="support.html#fund-a-course">Fund a course</a>
-        <a class="btn btn--plain" href="support.html#partners">Become a partner</a>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== CLOSING ACTION PANEL (same on every page) ===== -->
   <section class="section no-print">
     <div class="wrap">
@@ -285,7 +253,6 @@
         </div>
         <div class="actions">
           <a class="btn" href="schools.html#consultation">Book a consultation</a>
-          <a class="btn btn--plain" href="support.html#fund-a-course">Fund a course</a>
         </div>
       </div>
     </div>
@@ -301,7 +268,7 @@
 
       <div class="site-footer__brand">
         <a class="wordmark wordmark--large" href="index.html">
-          <span class="wordmark__get">Get</span> <span class="wordmark__deb">Debating</span>
+          <img src="images/logo/get-debating-logo-on-navy.svg" alt="Get Debating" width="176" height="128">
         </a>
         <p class="site-footer__nonprofit">Get Debating is a non-profit organisation.</p>
         <!-- REGISTRATION NUMBER: when you have one, un-comment the next line and fill it in.
@@ -314,7 +281,7 @@
         <ul>
           <li><a href="about.html">Who we are</a></li>
           <li><a href="schools.html">For schools</a></li>
-          <li><a href="support.html">Support us</a></li>
+          <li><a href="sponsor.html">Sponsor us</a></li>
           <li><a href="reviews.html">Schools &amp; reviews</a></li>
           <li><a href="next-steps.html">Next steps</a></li>
           <li><a href="blog/index.html">Blog</a></li>

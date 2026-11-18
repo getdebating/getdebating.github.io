@@ -114,6 +114,20 @@
     });
   });
 
+  /* Links from other pages, such as schools.html?programme=ongoing#consultation,
+     tick the choice whose label starts with the word after "programme=". */
+  var fromLink = new URLSearchParams(window.location.search).get("programme");
+  if (fromLink) {
+    fromLink = fromLink.trim().toLowerCase();
+    var ticked = false;
+    document.querySelectorAll('input[name="programme"]').forEach(function (radio) {
+      if (!ticked && fromLink && radio.value.toLowerCase().indexOf(fromLink) === 0) {
+        radio.checked = true;
+        ticked = true;
+      }
+    });
+  }
+
   /* 4. Blog posts written as plain text ---------------------
      Blank line = new paragraph.  "## " = subheading.  "- " = bullet.
      **bold**  and  [link text](https://address)  also work. */
@@ -146,23 +160,7 @@
     box.classList.add("is-formatted");
   });
 
-  /* 5. Print one drill on its own page ---------------------- */
-  document.querySelectorAll("[data-print-drill]").forEach(function (button) {
-    button.addEventListener("click", function () {
-      document.querySelectorAll(".drill.is-printing").forEach(function (d) { d.classList.remove("is-printing"); });
-      var drill = button.closest(".drill");
-      drill.classList.add("is-printing");
-      document.body.classList.add("print-one");
-      window.addEventListener("afterprint", function tidy() {
-        document.body.classList.remove("print-one");
-        drill.classList.remove("is-printing");
-        window.removeEventListener("afterprint", tidy);
-      });
-      try { window.print(); } catch (error) { /* printing is blocked in some previews */ }
-    });
-  });
-
-  /* 6. Current year in the footer -------------------------- */
+  /* 5. Current year in the footer -------------------------- */
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });
